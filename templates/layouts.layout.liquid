@@ -10,6 +10,10 @@
     <title>InSales Bootstrap</title>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="{{ 'custom.css' | asset_url }}"/>
+    {% if settings.dev_mode %}
+    <link rel="stylesheet/less" href="//localhost/insales-bootstrap/less/insales.less"/>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" data-env="development"></script>
+    {% endif %}
   </head>
   <body>
     <nav class="navbar navbar-inverse navbar-fixed-top">
